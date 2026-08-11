@@ -1,0 +1,244 @@
+.workspace-view {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+}
+
+.view-header {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: none;
+}
+
+.view-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header-meta {
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+.grid { display: grid; }
+.col-2 { grid-template-columns: repeat(2, 1fr); }
+.col-3 { grid-template-columns: repeat(3, 1fr); }
+.col-4 { grid-template-columns: repeat(4, 1fr); }
+.gap-0 { gap: 0; }
+.gap-16 { gap: 16px; }
+
+.flex { display: flex; }
+.flex-column { display: flex; flex-direction: column; }
+.flex-1 { flex: 1; }
+.justify-between { justify-content: space-between; }
+.align-center { align-items: center; }
+
+.border-right { border-right: 1px solid var(--border-default); }
+.border-bottom { border-bottom: 1px solid var(--border-default); }
+
+.p-4 { padding: 16px; }
+.p-6 { padding: 24px; }
+.mt-2 { margin-top: 8px; }
+.mt-4 { margin-top: 16px; }
+.mt-8 { margin-top: 32px; }
+.pt-2 { padding-top: 8px; }
+
+.text-accent { color: var(--color-accent); }
+.text-error { color: var(--status-overdue); }
+.text-done { color: var(--status-done); }
+.text-sm { font-size: 14px; }
+
+.metric-panel {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.metric-panel:hover {
+  background-color: var(--bg-highlight);
+}
+
+.metric-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.metric-value {
+  font-size: 38px;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+/* Field Ops */
+.progress-labels span {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.progress-track {
+  height: 8px;
+  display: flex;
+  background: var(--bg-highlight);
+  width: 100%;
+}
+
+.progress-fill.bg-done { background: var(--status-done); }
+.progress-fill.bg-pending { background: var(--status-pending); }
+.progress-fill.bg-overdue { background: var(--status-overdue); }
+
+.data-table {
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.data-table th {
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-default);
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.data-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.status-pill {
+  padding: 4px 10px;
+  border: 1px solid var(--border-default);
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-pill.completed { border-color: var(--status-done); color: var(--status-done); }
+.status-pill.pending { border-color: var(--status-pending); color: var(--status-pending); }
+.status-pill.overdue { border-color: var(--status-overdue); color: var(--status-overdue); }
+
+.btn-outline {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  font-family: var(--font-data);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-outline:hover { 
+  background: var(--bg-highlight); 
+  border-color: var(--color-accent);
+}
+.btn-link {
+  background: transparent;
+  border: none;
+  color: var(--color-accent);
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: var(--font-data);
+  font-size: 12px;
+}
+
+/* Analytical Lab - Dense Filters */
+.control-panel {
+  padding: 16px 24px;
+  background: var(--bg-highlight);
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.dense-filter-panel {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-highlight);
+}
+
+.filter-panel-header {
+  padding: 12px 24px;
+  font-size: 11px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--bg-page);
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 24px;
+  gap: 16px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.control-group label {
+  font-size: 10px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.control-select {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  font-family: var(--font-data);
+  font-size: 12px;
+  width: 100%;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.control-select:focus {
+  border-color: var(--color-accent);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-accent-light);
+}
+
+.chart-wrapper {
+  padding: 24px;
+  height: 400px;
+}
+
+.annotation-callout {
+  position: absolute;
+  font-size: 11px;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  background: var(--bg-card);
+  z-index: 5;
+  box-shadow: var(--shadow-lg);
+}
+
+/* 1:1 Inspector specific */
+.inspector-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+}
+
+.data-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dotted var(--border-subtle);
+  padding-bottom: 4px;
+  font-size: 13px;
+}

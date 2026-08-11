@@ -1,0 +1,55 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-page);
+}
+
+.main-workspace {
+  flex: 1;
+  margin-left: 240px; /* Sidebar width */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.workspace-header {
+  height: 48px;
+  border-bottom: 1px solid var(--border-default);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: var(--bg-page);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.breadcrumb-path {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.system-status {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--status-done);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.system-status::before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: var(--status-done);
+  border-radius: 50%;
+}
+
+.workspace-content {
+  flex: 1;
+  padding: 32px;
+}

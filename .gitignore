@@ -1,0 +1,20 @@
+# Node modules
+node_modules/
+dashboard/node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build output
+dashboard/dist/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Heavy reference files (PDF, Word)
+docs/references/*.pdf
+docs/references/*.docx
+docs/references/*.doc
+
+# AI IDE configurations
+.agents/

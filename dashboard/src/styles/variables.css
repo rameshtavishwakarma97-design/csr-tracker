@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Syne:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Modern Corporate Design System */
+  
+  /* Backgrounds */
+  --bg-page: #F8F9FA; /* Soft light gray background */
+  --bg-card: #FFFFFF; /* Pure white for depth */
+  --bg-sidebar: #FFFFFF;
+  --bg-active: #EFF6FF; /* Soft blue highlight for active states */
+  --bg-highlight: #F1F5F9; /* Slate-50 for subtle highlights */
+  
+  /* Borders and Depth */
+  --border-default: #E2E8F0; /* Slate-200, soft border */
+  --border-subtle: #F1F5F9; /* Slate-100 */
+  
+  /* Shadows and Radii */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  
+  /* Text */
+  --text-primary: #1E293B; /* Slate-800 */
+  --text-secondary: #64748B; /* Slate-500 */
+  --text-tertiary: #94A3B8; /* Slate-400 */
+  
+  /* Accent Color - Corporate Blue */
+  --color-accent: #005CB9;
+  --color-accent-light: #DBEAFE; /* Blue-100 */
+  
+  /* Comparison Colors */
+  --color-compare-a: #005CB9;
+  --color-compare-b: #F97316; /* Orange-500 for comparison */
+  
+  /* Status */
+  --status-pending: #F59E0B;
+  --status-done: #10B981;
+  --status-overdue: #EF4444;
+
+  /* Typography */
+  --font-heading: 'Syne', sans-serif;
+  --font-data: 'IBM Plex Mono', monospace;
+}
